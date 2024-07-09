@@ -36,8 +36,7 @@ router.get("/:id", async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 });
-
-// Update an event
+//UPDATE AN EVENT
 router.put("/:id", async (req, res) => {
   try {
     const updatedEvent = await Event.findByIdAndUpdate(
