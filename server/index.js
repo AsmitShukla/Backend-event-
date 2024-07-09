@@ -22,6 +22,6 @@ mongoose
 const eventRouter = require("./routes/events");
 app.use("/api/events", eventRouter);
 //creating our server on port 5000
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log(`Server is running on port: 5000`);
 });
